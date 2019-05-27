@@ -1,33 +1,19 @@
 module.exports = [
+/*
 	// Enrage Added
 	{
 		type: 'added',
 		target: 'MyBoss',
 		abnormalities: 8888888,
 		message: 'Enrage {duration}'
-	},
-	// Enrage Expiring, notify at 12 and 6 seconds remaining
-	{
-		type: 'expiring',
-		target: 'MyBoss',
-		abnormalities: 8888888,
-		message: 'Enrage {duration}',
-		time_remaining: [12, 6]
-	},
-	// Enrage Removed, show next enrage %
-	{
-		type: 'removed',
-		target: 'MyBoss',
-		abnormalities: 8888888,
-		message: 'Enrage Ended - Next {nextEnrage}'
-	},
-
+	},	
+*/
 	// Contagion Added
 	{
 		type: 'added',
 		target: 'MyBoss',
 		abnormalities: [701700, 701701],
-		message: 'Contagion {duration}'
+		message: '{icon} {duration}'
 	},
 /*
 	// Contagion Expiring, notify 6 seconds remaining
@@ -35,7 +21,7 @@ module.exports = [
 		type: 'expiring',
 		target: 'MyBoss',
 		abnormalities: [701700, 701701],
-		message: 'Contagion {duration}',
+		message: '{icon} {duration}',
 		time_remaining: 6
 	},
 	// Contagion Removed
@@ -43,10 +29,10 @@ module.exports = [
 		type: 'removed',
 		target: 'MyBoss',
 		abnormalities: [701700, 701701],
-		message: 'Contagion Ended'
+		message: '{icon} Ended'
 	},
 */
-
+/*
 	// Hurricane Added
 	{
 		type: 'added',
@@ -54,6 +40,7 @@ module.exports = [
 		abnormalities: 60010,
 		message: 'Hurricane {duration}'
 	},
+*/
 /*
 	// Hurricane Expiring, notify at 6 seconds remaining
 	{
@@ -77,7 +64,7 @@ module.exports = [
 		type: 'added',
 		target: 'Self',
 		abnormalities: [200701, 200700],
-		message: 'Adrenaline Rush {duration}'
+		message: '{icon} {duration}'
 	},
 /*
 	// Adrenaline Rush  Expiring, notify at 6 seconds remaining
@@ -85,7 +72,7 @@ module.exports = [
 		type: 'expiring',
 		target: 'Self',
 		abnormalities: [200701, 200700],
-		message: 'Adrenaline Rush {duration}',
+		message: '{icon} {duration}',
 		time_remaining: 6
 	},
 	// Adrenaline Rush Removed
@@ -93,10 +80,10 @@ module.exports = [
 		type: 'removed',
 		target: 'Self',
 		abnormalities: [200701, 200700],
-		message: 'Adrenaline Rush Ended'
+		message: '{icon} Ended'
 	},
 */
-
+/*
 	// Missing Battle Solution / Nostrum
 	{
 		type: 'MissingDuringCombat',
@@ -105,13 +92,14 @@ module.exports = [
 		message: 'Missing {icon}',
 		rewarn_timeout: 15
 	},
+*/
 /*
 	// Vergos Aggro Debuff
    {
 		type: 'AddedOrRefreshed',
 		target: 'PartyIncludingSelf',
 		abnormalities: 950023,
-		message: '{name} has {stacks} stack(s)',
+		message: '{name} has {icon} {stacks} stack(s)',
 		required_stacks: 1
 	},
 
@@ -120,7 +108,78 @@ module.exports = [
 		type: 'Removed',
 		target: 'PartyIncludingSelf',
 		abnormalities: 950023,
-		message: '{name}\'s stacks expired'
+		message: '{name}\'s {icon} stacks expired'
 	},
 */
+     // Priest steroid  Added
+	{
+		type: 'added',
+		target: 'Self',
+		abnormalities: [805803],
+		message: '{icon} {duration}'
+	},
+
+	// Mystic Wrath  Added
+	{
+		type: 'added',
+		target: 'Self',
+		abnormalities: [702004],
+		message: '{icon} {duration}'
+	},
+	
+/*	// Mystic Vengeance  Added
+	{
+		type: 'added',
+		target: 'Self',
+		abnormalities: [702003],
+		message: '{icon}Vengeance {duration}'
+	},
+		
+	// Priest Divine Charge  Added
+	{
+		type: 'added',
+		target: 'Self',
+		abnormalities: [ 805711, 805712, 805713],
+		message: '{icon}Divine Charge {duration}'
+	},
+	
+	// Holy Burst  Added
+	{
+		type: 'added',
+		target: 'Self',
+		abnormalities: [806021, 806021],
+		message: '{icon} {duration}'
+	},
+*/
+	// Kaia  Added
+	{
+		type: 'added',
+		target: 'Self',
+		abnormalities: [800300, 800302, 800303, 800304],
+		message: '{icon} on'
+	},
+	
+	// Mystic Shield  Added
+	{
+		type: 'added',
+		target: 'Self',
+		abnormalities: [702001],
+		message: '{icon} on'
+	},
+	
+	// Bahaar Laser
+    {
+		type: 'Added',
+		target: 'PartyIncludingSelf',
+		abnormalities: 90442502,
+		message: '{name} has {icon}'
+	},
+	
+	// Rhythmic Debuff Added
+	{
+		type: 'added',
+		target: 'MyBoss',
+		abnormalities: 10153141,
+		message: '{icon} {duration}'
+	},
 ]

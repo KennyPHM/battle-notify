@@ -1,6 +1,6 @@
 module.exports = [
 
-
+/*
 	// Vergos Aggro Debuff
    {
 		type: 'AddedOrRefreshed',
@@ -16,5 +16,15 @@ module.exports = [
 		target: 'PartyIncludingSelf',
 		abnormalities: 950023,
 		message: '{name}\'s stacks expired'
+	},
+*/
+	
+	// endurance debuff
+	{
+		type: 'MissingDuringCombat',
+		target: 'MyBoss',
+		abnormalities: [200302, 101200, 101210, 10153140],
+		message: 'Missing Debilitate',
+		rewarn_timeout: 4
 	},
 ]

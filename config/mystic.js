@@ -34,4 +34,35 @@ module.exports = [
 		message: "Missing Endurance Debuff",
 		rewarn_timeout: 10
 	},
+	
+		// Contagion up soon
+	{
+		type: 'Expiring',
+		skills: 410900,
+		message: '{icon} cd {duration}',
+		time_remaining: [1, 3, 5]
+	},
+		
+		// Thrall of wrath up soon
+	{
+		type: 'Expiring',
+		skills: 340100,
+		message: '{icon} cd {duration}',
+		time_remaining: 10
+	},
+	
+		// Thrall of vengeance up soon
+	{
+		type: 'Expiring',
+		skills: 330100,
+		message: '{icon} cd {duration}',
+		time_remaining: 2
+	},
+	
+	// Thrall of life reset
+,    {
+        type: 'Reset',
+        skills: 270100, 
+        message: '{icon} reset!'
+    },
 ]
